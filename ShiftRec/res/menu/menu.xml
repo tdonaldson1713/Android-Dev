@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:id="@+id/add_pay_week"
+        android:title="@string/add_header"
+        android:icon="@android:drawable/btn_plus"
+        android:showAsAction="ifRoom" />
+
+</menu>

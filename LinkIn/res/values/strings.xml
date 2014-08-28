@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Link It</string>
+    <string name="message_hint">Enter Your Message</string>
+    <string name="link_hint">Enter Your Link</string>
+	<string name="link">Link</string>
+	<string name="sharing_label">Add a Link</string>
+	<string name="no_shareable_networks">No networks selected. Please select at least one.</string>
+	<string name="not_logged_in">Not logged into any networks. Please log into at least one to continue.</string>
+	<string name="logout_warning">Logging out will de-authorize Link It from %s. \n\nDo you wish to continue?</string>
+	<string name="ok">OK</string>
+	<string name="close">Close</string>
+	<string name="logout">Logout</string>
+	<string name="cancel_logout">Cancel</string>
+	<string name="message_length">%d</string>
+	<string name="sharing_content">Not sharing</string>
+	<string name="sharing_content_yes">Sharing</string>
+	<string name="no_connection">Not connected to Wifi or Mobile. Please connect and reopen the app.</string>
+	<string name="send_social_network">Update Status</string>
+	<string name="send_social_message">Do you really want to update your status on\n</string>
+	<string name="update">Update SMN</string>
+	<string name="dont_update">Cancel Update</string>
+	<string name="is_shortening_message">Message will be shortened</string>
+	<string name="app_id">279435302237674</string>
+	<string name="privacy_policy_header">Privacy Policy</string>
+	<string name="privacy_policy">Link It and/or GoTU Consultants, LLC, does not, and will not, collect any personal data, 
+	    login information, or any other personally identifying information. All information placed into Link It is stored 
+	    locally on each user’s individual device and is not stored or shared with GoTU Consultants, LLC, or any third party. 
+	    If you delete Link It off of your device, all information placed into Link It will be deleted. \n\nShould you have any 
+	    questions concerning our privacy policy, please do not hesitate to contact us at gotuconsultants@gmail.com. </string>
+	
+	<!-- Google+ -->
+	<string name="GooglePlus">Google Plus</string>
+	<string name="google_plus">google_plus</string>
+	<string name="gpLogin">You have logged into Google+</string>
+	<string name="gpLogout">You have logged out of Google+</string>
+	<string name="google_name">\tNot logged in.</string>
+	<string name="google_name_logged">\t%s</string>
+	
+	<!-- Facebook -->
+	<string name="Facebook">Facebook</string>
+	<string name="fbLogin">You have logged into Facebook</string>
+	<string name="fbLogout">You have logged out of Facebook</string>
+	<string name="cannot_share_to_facebook">Unable to share to Facebook</string>
+	<string name="facebook_name">\tNot logged in.</string>
+	<string name="facebook_name_logged">\t%s</string>
+	<string name="get_permissions">Permission to post is not granted. Please reload app and try again.</string>
+	
+	<!-- Twitter -->
+	<string name="Twitter">Twitter</string>
+	<string name="tLogin">You have logged into Twitter</string>
+	<string name="tLogout">You have logged out of Twitter</string>
+	<string name="twitter_name">\tNot logged in.</string>
+	<string name="twitter_name_logged">\t%s</string>
+	<string name="unable_to_shorten">Unable to contact to Google servers to shorten URL.</string>
+	
+	<!-- SMS -->
+	<string name="SMS">SMS</string>
+	<string name="send_sms_title">Send Message To %s</string>
+	<string name="send">Send SMS</string>
+	<string name="dont_send">Cancel SMS</string>
+	<string name="unable_to_find_contact">Cannot find valid contact. Please try again.</string>
+	<string name="sent_sms">Sent to %s</string>
+</resources>

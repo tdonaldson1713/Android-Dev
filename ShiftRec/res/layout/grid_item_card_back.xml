@@ -1,0 +1,230 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelayout_back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/linearlayout_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5" 
+            android:layout_marginLeft="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/card_shape_back" >
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Testing"
+                android:rotation="-90"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_backcard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.00"
+            android:background="@drawable/card_shape_back"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginRight="4dp"
+            android:focusableInTouchMode="false"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/tableDays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center" >
+
+                <TableRow
+                    android:id="@+id/tableRowMon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="6dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textMon"
+                        android:text="@string/Monday"
+                         />
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textMonHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowTues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textTues"
+                        android:text="@string/Tuesday" />
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textTuesHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowWed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textWed"
+                        android:text="@string/Wednesday" />
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textWedHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowThurs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textThurs"
+                        android:text="@string/Thursday"/>
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textThursHours"
+                        android:text="@string/daily_hours"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowFri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textFri"
+                        android:text="@string/Friday"/>
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textFriHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableSat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textSat"
+                        android:text="@string/Saturday" />
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textSatHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRowSun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp" >
+
+                    <TextView
+                        style="@style/TableTextHeader"
+                        android:id="@+id/textSun"
+                        android:text="@string/Sunday" />
+
+                    <TextView
+                        style="@style/TableTextContent"
+                        android:id="@+id/textSunHours"
+                        android:text="@string/daily_hours" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnOverview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/darker_blue_button"
+            android:text="@string/overview"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/darker_blue_button"
+            android:text="@string/edit"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/black" />
+
+</LinearLayout>

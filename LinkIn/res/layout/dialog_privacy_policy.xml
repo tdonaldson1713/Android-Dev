@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corners"
+    android:isScrollContainer="true" >
+
+    <TextView
+        android:id="@+id/textPrivacyPolicyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_message_custom_text"
+        android:gravity="center"
+        android:text="@string/privacy_policy_header"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollPrivacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textPrivacyPolicyTitle"
+        android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+        <TextView
+            android:id="@+id/textPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small"            
+            android:text="@string/privacy_policy" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_privacy_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollPrivacyPolicy"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edit_message_custom_text"
+        android:text="@string/close" />
+
+</RelativeLayout>

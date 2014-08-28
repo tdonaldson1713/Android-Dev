@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corners" >
+
+    <TextView
+        android:id="@+id/textWarningLogoutMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/edit_message_custom_text"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textWarningLogoutMessage"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_logout_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_message_custom_text"
+            android:text="@string/cancel_logout" />
+
+        <Button
+            android:id="@+id/btn_logout_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_message_custom_text"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+</RelativeLayout>

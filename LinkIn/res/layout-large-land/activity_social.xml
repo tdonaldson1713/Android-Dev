@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/facebook_section"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.7" >
+
+                <LinearLayout
+                    android:id="@+id/facebook_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bar_large"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgFacebook"
+                        style="@style/SocialNetworkImageButton.LargeLayout"
+                        android:src="@drawable/facebook_icon_large" />
+
+                    <TextView
+                        android:id="@+id/facebook_name_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/Facebook"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/facebook_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/facebook_bar"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/facebook_login_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/facebook_name" />
+
+                    <ImageButton
+                        android:id="@+id/facebookConnect"
+                        style="@style/SocialLogStyle_Large" />
+
+                    <ImageButton
+                        android:id="@+id/facebookDisconnect"
+                        style="@style/SocialLogStyle_Large"
+                        android:src="@drawable/connected_large"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/twitter_section"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/twitter_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bar_large"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgTwitter"
+                        style="@style/SocialNetworkImageButton.LargeLayout"
+                        android:src="@drawable/twitter_icon_large" />
+
+                    <TextView
+                        android:id="@+id/twitter_name_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/Twitter"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twitter_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/twitter_login_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/twitter_name" />
+
+                    <ImageButton
+                        android:id="@+id/twitterConnect"
+                        style="@style/SocialLogStyle_Large" />
+
+                    <ImageButton
+                        android:id="@+id/twitterDisconnect"
+                        style="@style/SocialLogStyle_Large"
+                        android:src="@drawable/connected_large"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/google_plus_section"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_weight="0.7" >
+
+                <LinearLayout
+                    android:id="@+id/google_plus_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/bar_large"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imgGooglePlus"
+                        style="@style/SocialNetworkImageButton.LargeLayout"
+                        android:src="@drawable/google_plus_icon_large" />
+
+                    <TextView
+                        android:id="@+id/google_plus_name_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/GooglePlus"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/google_plus_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/google_plus_bar"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/google_login_title"
+                        style="@style/TitleBar_LargeLayout"
+                        android:text="@string/google_name" />
+
+                    <ImageButton
+                        android:id="@+id/googlePlusConnect"
+                        style="@style/SocialLogStyle_Large" />
+
+                    <ImageButton
+                        android:id="@+id/googlePlusDisconnect"
+                        style="@style/SocialLogStyle_Large"
+                        android:src="@drawable/connected_large"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imgShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/link" />
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        style="@android:style/Theme.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2605278024585195/6771448269" />
+
+</RelativeLayout>

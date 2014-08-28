@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+<!-- #E0FFE0 -->
+    <GridView
+        android:id="@+id/gv_Grid"
+        android:layout_width="fill_parent"
+        android:layout_height="286dp"
+        android:layout_above="@+id/adHour"
+        android:layout_marginTop="4dp"
+        android:layout_alignParentTop="true"
+        android:animateLayoutChanges="true"
+        android:columnWidth="300dp"
+        android:gravity="center"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="1"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="13dip" >
+
+    </GridView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adHour"
+        style="@android:style/Theme.Translucent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-2605278024585195/2337478269" >
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

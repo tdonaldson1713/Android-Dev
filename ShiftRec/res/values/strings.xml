@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">ShiftRec</string>
+
+    <!-- Table Headers -->
+	<string name="Monday">Monday:</string>
+	<string name="Tuesday">Tuesday:</string>
+	<string name="Wednesday">Wednesday:</string>
+	<string name="Thursday">Thursday:</string>
+	<string name="Friday">Friday:</string>
+	<string name="Saturday">Saturday:</string>
+	<string name="Sunday">Sunday:</string>	
+	<string name="Hours">Hours:</string>
+	<string name="PayRate">Pay Rate:</string>
+	<string name="NetPay">Net Pay:</string>
+	
+	<!-- Table Content -->
+	<string name="daily_hours">%s Hours</string>
+	<string name="weekly_hours">%s</string>
+	<string name="pay_rate">&#36;%s</string>
+	<string name="net_pay">&#36;%s</string>
+	
+	<string name="overview">Overview</string>
+	<string name="details">Details</string>
+	<string name="edit">Edit</string>
+	
+	<!-- Dialogs -->
+	<string name="hours_clock_in">Clock In:</string>
+	<string name="hours_clock_out">Clock Out:</string>
+	<string name="save">Save</string>
+	<string name="cancel">Cancel</string>
+	
+	<!-- Edit Hours Dialog -->
+	<string name="edit_header">Edit Pay Period</string>
+	<string name="pay_rate_title">Pay Rate:</string>
+	<string name="hours_title">Hours:</string>
+	
+	<!--  Add Pay Week Dialog -->
+	<string name="add_header">Add Pay Period</string>
+	<string name="begin_day">First Day:</string>
+	<string name="end_day">Last Day:</string>
+	<string name="day_header">Pick %s Day</string>
+	<string name="beginning">Beginning</string>
+	<string name="ending">Ending</string>
+	
+	<!-- Time Picker Dialog -->
+	<string name="time_picker_header">Edit Time Period</string>
+	
+	<!-- Error Messages -->
+	<string name="edit_error">Error: Pay rate and/or Hours have not been entered.</string>
+	<string name="pay_week_error">Error: Beginning or Ending day has not been entered.</string>
+	<string name="six_days_error">Error: Beginning and Ending day must be 6 days apart.</string>
+	<string name="one_month_error">Error: Month difference is greater than 1. Must be at most 1.</string>
+	<string name="neg_one_month_error">Error: Ending day is before the beginning day. Must be the other way around.</string>
+	<string name="one_year_error">Error: Year difference is greater than 1 or less than 0. Must be at most 1.</string>
+	<string name="new_year_error">Error: Years are different but months do not span the new year.</string>
+	<string name="pay_week_unknown_error">Error: Some unknown error has occurred. Please review your information and try again.</string>
+</resources>

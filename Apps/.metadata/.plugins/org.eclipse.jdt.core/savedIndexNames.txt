@@ -1,0 +1,18 @@
+INDEX VERSION 1.126+G:\GitHub\Android\Apps\.metadata\.plugins\org.eclipse.jdt.core
+250580175.index
+1067619991.index
+1866657281.index
+943500299.index
+205830666.index
+3065416851.index
+2171314036.index
+2016719090.index
+2908634290.index
+3132819996.index
+848856923.index
+3515282563.index
+4204663679.index
+1798669255.index
+2348298793.index
+1478092081.index
+287979389.index
